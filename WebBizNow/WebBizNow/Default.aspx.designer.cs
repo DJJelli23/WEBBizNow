@@ -13,22 +13,40 @@ namespace WebBizNow {
     public partial class _Default {
         
         /// <summary>
-        /// MultiView1 control.
+        /// webBizNowMultiView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.MultiView MultiView1;
+        protected global::System.Web.UI.WebControls.MultiView webBizNowMultiView;
         
         /// <summary>
-        /// View1 control.
+        /// viewSocialM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.View View1;
+        protected global::System.Web.UI.WebControls.View viewSocialM;
+        
+        /// <summary>
+        /// socialMTable control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table socialMTable;
+        
+        /// <summary>
+        /// nextButton1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton nextButton1;
         
         /// <summary>
         /// View2 control.
