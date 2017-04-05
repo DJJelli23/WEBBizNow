@@ -11,6 +11,14 @@ namespace WebBizNow
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!IsPostBack)
+            {
+                webBizNowMultiView.ActiveViewIndex = 0;
+            }
+        }
+
+        protected void nextButton1_Click(object sender, EventArgs e)
+        {
 
         }
     }
