@@ -40,22 +40,67 @@ namespace WebBizNow {
         protected global::System.Web.UI.WebControls.Table socialMTable;
         
         /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
+        /// faceButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton faceButton;
+        
+        /// <summary>
         /// nextButton1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton nextButton1;
+        protected global::System.Web.UI.WebControls.Button nextButton1;
         
         /// <summary>
-        /// View2 control.
+        /// viewAddons control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.View View2;
+        protected global::System.Web.UI.WebControls.View viewAddons;
+        
+        /// <summary>
+        /// Table1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table Table1;
+        
+        /// <summary>
+        /// prevButton1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button prevButton1;
+        
+        /// <summary>
+        /// nextButton2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button nextButton2;
         
         /// <summary>
         /// View3 control.
@@ -67,6 +112,33 @@ namespace WebBizNow {
         protected global::System.Web.UI.WebControls.View View3;
         
         /// <summary>
+        /// Table2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table Table2;
+        
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
+        
+        /// <summary>
+        /// Button2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button2;
+        
+        /// <summary>
         /// View4 control.
         /// </summary>
         /// <remarks>
@@ -76,6 +148,33 @@ namespace WebBizNow {
         protected global::System.Web.UI.WebControls.View View4;
         
         /// <summary>
+        /// Table3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table Table3;
+        
+        /// <summary>
+        /// Button3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button3;
+        
+        /// <summary>
+        /// Button4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button4;
+        
+        /// <summary>
         /// View5 control.
         /// </summary>
         /// <remarks>
@@ -83,5 +182,32 @@ namespace WebBizNow {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.View View5;
+        
+        /// <summary>
+        /// Table4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table Table4;
+        
+        /// <summary>
+        /// Button5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button5;
+        
+        /// <summary>
+        /// finishButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button finishButton;
     }
 }
