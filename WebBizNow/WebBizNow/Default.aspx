@@ -21,7 +21,7 @@
                     </asp:TableRow>
                     <asp:TableRow>
                         <asp:TableCell>
-                            <asp:LinkButton runat="server" class="btn btn-primary btn-social btn-lg facebook" ID="faceButton" OnClick="faceButton_Click" aria-hidden="true">
+                            <asp:LinkButton runat="server" class="btn btn-primary btn-social btn-lg facebook" name="faceButton" OnClick="faceButton_Click" aria-hidden="true">
                                 <%--<span class="glyphicon glyphicon-certificate"></span>--%> <%--I replaced this icon when I found the Mobirise CSS file.--%>
                                 <span class="socicon socicon-facebook"></span>
                             </asp:LinkButton>
