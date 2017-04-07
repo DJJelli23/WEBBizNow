@@ -6,7 +6,7 @@
         <asp:MultiView ID="webBizNowMultiView" runat="server">
 
             <asp:View ID="viewSocialM" runat="server">
-                <asp:Table ID="socialMTable" runat="server" CssClass="col-lg-12">
+                <asp:Table ID="socialMTable" runat="server" CssClass="col-lg-8 col-lg-offset-2">
                     <asp:TableHeaderRow>
                         <asp:TableHeaderCell CssClass="text-center">
                         <div class="h1">
@@ -16,20 +16,26 @@
                     </asp:TableHeaderRow>
                     <asp:TableRow>
                         <asp:TableCell CssClass="text-center">
-                            <asp:Label ID="Label1" runat="server" Text="What Social Media Accounts does your company have?" CssClass="h4"></asp:Label>
+                            <asp:Label ID="socialMQuesLabel" runat="server" Text="What Social Media Accounts does your company have?" CssClass="h4" ></asp:Label>
                         </asp:TableCell>
                     </asp:TableRow>
                     <asp:TableRow>
-                        <asp:TableCell>
-                            <asp:LinkButton runat="server" class="btn btn-primary btn-social btn-lg facebook" name="faceButton" OnClick="faceButton_Click" aria-hidden="true">
-                                <%--<span class="glyphicon glyphicon-certificate"></span>--%> <%--I replaced this icon when I found the Mobirise CSS file.--%>
-                                <span class="socicon socicon-facebook"></span>
-                            </asp:LinkButton>
+                        <asp:TableCell >
+
+                        </asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow CssClass="col-lg-3 col-lg-offset-5">
+                        <asp:TableCell >
+                            <asp:CheckBox ID="facebookCheck" runat="server" Text="Facebook"/>
+                          <%--  <asp:LinkButton runat="server" class="btn btn-primary btn-social btn-lg activefacebook" name="faceButton" OnClick="faceButton_Click" aria-hidden="true">
+                                <%--<span class="glyphicon glyphicon-certificate"></span>--% <%--I replaced this icon when I found the Mobirise CSS file.--%
+                                <%--<span class="socicon socicon-facebook"></span>--%
+                            </asp:LinkButton>--%>
                         </asp:TableCell>
                     </asp:TableRow>
                     <asp:TableFooterRow>
                         <asp:TableCell>
-                            <%--                            <div class="col-lg-offset-10">
+                            <%--<div class="col-lg-offset-10">
                                 <asp:LinkButton ID="nextButton1" runat="server" CssClass="btn btn-primary" OnClick="nextButton_Click">Next <span class="glyphicon glyphicon-arrow-right"></span></asp:LinkButton>
                                 <%--<asp:LinkButton ID="nextButton" runat="server" Text="Button" CssClass="btn btn-default">
                                     <span class="glyphicon glyphicon-arrow-right"></span> Next
