@@ -14,6 +14,7 @@ namespace WebBizNow
             if(!IsPostBack)
             {
                 webBizNowMultiView.ActiveViewIndex = 0;
+				faceTextAccount.Enabled = false;
             }
         }
 
@@ -63,12 +64,19 @@ namespace WebBizNow
             
         }
 
-        protected void faceButton_Click(object sender, EventArgs e)
-        {
-            //if (faceButton. == true)
-            //{
-            //    int value = 1;
-            //}
-        }
-    }
+		protected void CheckButtonClicked(object sender, EventArgs e)
+		{
+			if (facebookCheck.Checked == true)
+			{
+				faceTextAccount.Enabled = true;
+			}
+			else if (facebookCheck.Checked == false)
+			{
+				faceTextAccount.Enabled = false;
+				faceTextAccount.Text = "";
+			}
+		}
+
+
+	}
 }
