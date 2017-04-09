@@ -24,13 +24,17 @@
 
                         </asp:TableCell>
                     </asp:TableRow>
-                    <asp:TableRow CssClass="col-lg-3 col-lg-offset-5">
+                    <asp:TableRow CssClass="col-lg-6 col-lg-offset-4">
                         <asp:TableCell >
-                            <asp:CheckBox ID="facebookCheck" runat="server" Text="Facebook"/>
+                            <asp:CheckBox ID="facebookCheck" runat="server" Text="    Facebook" OnCheckedChanged="CheckButtonClicked" AutoPostBack="True" />
                           <%--  <asp:LinkButton runat="server" class="btn btn-primary btn-social btn-lg activefacebook" name="faceButton" OnClick="faceButton_Click" aria-hidden="true">
                                 <%--<span class="glyphicon glyphicon-certificate"></span>--% <%--I replaced this icon when I found the Mobirise CSS file.--%
                                 <%--<span class="socicon socicon-facebook"></span>--%
                             </asp:LinkButton>--%>
+                        </asp:TableCell>
+                        <asp:TableCell></asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox runat="server" ID="faceTextAccount"></asp:TextBox>
                         </asp:TableCell>
                     </asp:TableRow>
                     <asp:TableFooterRow>
@@ -143,10 +147,10 @@
 
         </asp:MultiView>
     </div>
-    <script>
+<%--    <script>
         $('.facebook').click(function (e) {
             e.preventDefault();
             $(this).addClass('activefacebook');
         })
-    </script>
+    </script>--%>
 </asp:Content>
