@@ -4,47 +4,85 @@
 
     <div class="row">
         <asp:MultiView ID="webBizNowMultiView" runat="server">
-
+            <%-- Social Media View --%>
             <asp:View ID="viewSocialM" runat="server">
-                <asp:Table ID="socialMTable" runat="server" CssClass="col-lg-8 col-lg-offset-2">
-                    <asp:TableHeaderRow>
+                <asp:Table ID="socialMTable" runat="server" CssClass="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-1">
+                    <asp:TableHeaderRow CssClass="col-lg-8 col-lg-offset-4 col-md-10 col-md-offset-6 col-sm-10 col-sm-offset-5">
                         <asp:TableHeaderCell CssClass="text-center">
                         <div class="h1">
                             <p>Social Media</p>
                         </div>
                         </asp:TableHeaderCell>
                     </asp:TableHeaderRow>
-                    <asp:TableRow>
+                    <asp:TableRow CssClass="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-6 col-sm-10 col-sm-offset-4">
                         <asp:TableCell CssClass="text-center">
-                            <asp:Label ID="socialMQuesLabel" runat="server" Text="What Social Media Accounts does your company have?" CssClass="h4" ></asp:Label>
+                            <asp:Label ID="socialMQuesLabel" runat="server" Text="What Social Media Accounts does your company have?" CssClass="h4"></asp:Label>
                         </asp:TableCell>
                     </asp:TableRow>
                     <asp:TableRow>
-                        <asp:TableCell >
-
+                        <asp:TableCell>
                         </asp:TableCell>
                     </asp:TableRow>
-                    <asp:TableRow CssClass="col-lg-6 col-lg-offset-4">
-                        <asp:TableCell >
-                            <asp:CheckBox ID="facebookCheck" runat="server" Text="    Facebook" OnCheckedChanged="CheckButtonClicked" AutoPostBack="True" />
-                          <%--  <asp:LinkButton runat="server" class="btn btn-primary btn-social btn-lg activefacebook" name="faceButton" OnClick="faceButton_Click" aria-hidden="true">
-                                <%--<span class="glyphicon glyphicon-certificate"></span>--% <%--I replaced this icon when I found the Mobirise CSS file.--%
-                                <%--<span class="socicon socicon-facebook"></span>--%
-                            </asp:LinkButton>--%>
+                    <%--This is where the social media checkboxes will be with their textbox controller to gather the information if the user signing up for the company has one.--%>
+                    <%-------------------------------------------------------------------------------------------------------------------------------------%>
+                    <asp:TableRow CssClass="col-lg-6 col-lg-offset-3">
+                        <asp:TableCell CssClass="col-lg-8 col-lg-offset-2  col-md-6 col-sm-6 col-xs-6">
+                            <asp:CheckBox ID="facebookCheck" runat="server" Text="Facebook" OnCheckedChanged="CheckButtonClicked" AutoPostBack="True" />
                         </asp:TableCell>
-                        <asp:TableCell></asp:TableCell>
+                        <asp:TableCell CssClass="col-lg-2 col-md-2 col-sm-2 col-xs-2"></asp:TableCell>
                         <asp:TableCell>
-                            <asp:TextBox runat="server" ID="faceTextAccount"></asp:TextBox>
+                            <asp:TextBox runat="server" ID="faceTextAccount" ToolTip="URL of the Company's Facebook account." Enabled="false"></asp:TextBox>
                         </asp:TableCell>
                     </asp:TableRow>
-                    <asp:TableFooterRow>
+                    <asp:TableRow CssClass="col-lg-6 col-lg-offset-3">
+                        <asp:TableCell CssClass="col-lg-6 col-md-4 col-sm-6 col-xs-6">
+                            <asp:CheckBox ID="youTubeCheck" runat="server" Text="YouTube" OnCheckedChanged="CheckButtonClicked" AutoPostBack="True" />
+                        </asp:TableCell>
+                        <asp:TableCell CssClass="col-lg-2 col-md-2 col-sm-2 col-xs-2"></asp:TableCell>
+                        <asp:TableCell >
+                            <asp:TextBox runat="server" ID="youTubeTextAccount" ToolTip="URL of the Company's YouTube account." Enabled="false"></asp:TextBox>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow CssClass="col-lg-6 col-lg-offset-3">
+                        <asp:TableCell CssClass="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <asp:CheckBox ID="pinCheck" runat="server" Text="Pintrest" OnCheckedChanged="CheckButtonClicked" AutoPostBack="True" />
+                        </asp:TableCell>
+                        <asp:TableCell CssClass="col-lg-2 col-md-2 col-sm-2 col-xs-2"></asp:TableCell>
                         <asp:TableCell>
-                            <%--<div class="col-lg-offset-10">
-                                <asp:LinkButton ID="nextButton1" runat="server" CssClass="btn btn-primary" OnClick="nextButton_Click">Next <span class="glyphicon glyphicon-arrow-right"></span></asp:LinkButton>
-                                <%--<asp:LinkButton ID="nextButton" runat="server" Text="Button" CssClass="btn btn-default">
-                                    <span class="glyphicon glyphicon-arrow-right"></span> Next
-                                </asp:LinkButton>
-                            </div>--%>
+                            <asp:TextBox runat="server" ID="pinTextBox" ToolTip="URL of the Company's Pintrest account." Enabled="false"></asp:TextBox>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow CssClass="col-lg-6 col-lg-offset-3">
+                        <asp:TableCell CssClass="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <asp:CheckBox ID="linkCheck" runat="server" Text="LinkedIn" OnCheckedChanged="CheckButtonClicked" AutoPostBack="True" />
+                        </asp:TableCell>
+                        <asp:TableCell CssClass="col-lg-2 col-md-2 col-sm-2 col-xs-2"></asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox runat="server" ID="linkTextBox" ToolTip="URL of the Company's LinkedIn account." Enabled="false"></asp:TextBox>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow CssClass="col-lg-6 col-lg-offset-3">
+                        <asp:TableCell CssClass="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <asp:CheckBox ID="twitCheck" runat="server" Text="Twitter" OnCheckedChanged="CheckButtonClicked" AutoPostBack="True" />
+                        </asp:TableCell>
+                        <asp:TableCell CssClass="col-lg-2 col-md-2 col-sm-1 col-xs-2"></asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox runat="server" ID="twitTextBox" ToolTip="URL of the Company's Twitter account." Enabled="false"></asp:TextBox>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow CssClass="col-lg-6 col-lg-offset-3">
+                        <asp:TableCell CssClass="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <asp:CheckBox ID="instaCheck" runat="server" Text="Instagram" OnCheckedChanged="CheckButtonClicked" AutoPostBack="True" />
+                        </asp:TableCell>
+                        <asp:TableCell CssClass="col-lg-2 col-md-2 col-sm-2 col-xs-2"></asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox runat="server" ID="instaTextBox" ToolTip="URL of the Company's Instagram account." Enabled="false"></asp:TextBox>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                    <%-------------------------------------------------------------------------------------------------------------------------------------%>
+                    <%-- This is where the buttons are for going back and forth on the Multiview control. --%>
+                    <asp:TableFooterRow CssClass="col-sm-offset-11">
+                        <asp:TableCell>
                             <div class="col-lg-offset-11">
                                 <asp:Button ID="nextButton1" runat="server" CssClass="btn btn-default" OnClick="nextButton_Click" Text="Next" />
                             </div>
@@ -52,6 +90,7 @@
                     </asp:TableFooterRow>
                 </asp:Table>
             </asp:View>
+            <%-- Addon View --%>
             <asp:View ID="viewAddons" runat="server">
                 <asp:Table ID="Table1" runat="server" CssClass="col-lg-12">
                     <asp:TableHeaderRow>
@@ -147,10 +186,4 @@
 
         </asp:MultiView>
     </div>
-<%--    <script>
-        $('.facebook').click(function (e) {
-            e.preventDefault();
-            $(this).addClass('activefacebook');
-        })
-    </script>--%>
 </asp:Content>
