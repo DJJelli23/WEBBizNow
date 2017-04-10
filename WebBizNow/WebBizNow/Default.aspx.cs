@@ -14,7 +14,6 @@ namespace WebBizNow
             if(!IsPostBack)
             {
                 webBizNowMultiView.ActiveViewIndex = 0;
-				faceTextAccount.Enabled = false;
             }
         }
 
@@ -66,6 +65,7 @@ namespace WebBizNow
 
 		protected void CheckButtonClicked(object sender, EventArgs e)
 		{
+			//Facebook Checkbox
 			if (facebookCheck.Checked == true)
 			{
 				faceTextAccount.Enabled = true;
@@ -74,6 +74,56 @@ namespace WebBizNow
 			{
 				faceTextAccount.Enabled = false;
 				faceTextAccount.Text = "";
+			}
+			//YouTube Checkbox
+			if (youTubeCheck.Checked == true)
+			{
+				youTubeTextAccount.Enabled = true;
+			}
+			else if (facebookCheck.Checked == false)
+			{
+				youTubeTextAccount.Enabled = false;
+				youTubeTextAccount.Text = "";
+			}
+			//Pintrest Checkbox
+			if (youTubeCheck.Checked == true)
+			{
+				youTubeTextAccount.Enabled = true;
+			}
+			else if (facebookCheck.Checked == false)
+			{
+				youTubeTextAccount.Enabled = false;
+				youTubeTextAccount.Text = "";
+			}
+			//LinkedIn Checkbox
+			if (youTubeCheck.Checked == true)
+			{
+				youTubeTextAccount.Enabled = true;
+			}
+			else if (facebookCheck.Checked == false)
+			{
+				youTubeTextAccount.Enabled = false;
+				youTubeTextAccount.Text = "";
+			}
+			//Twitter Checkbox
+			if (youTubeCheck.Checked == true)
+			{
+				youTubeTextAccount.Enabled = true;
+			}
+			else if (facebookCheck.Checked == false)
+			{
+				youTubeTextAccount.Enabled = false;
+				youTubeTextAccount.Text = "";
+			}
+			//Instagram Checkbox
+			if (youTubeCheck.Checked == true)
+			{
+				youTubeTextAccount.Enabled = true;
+			}
+			else if (facebookCheck.Checked == false)
+			{
+				youTubeTextAccount.Enabled = false;
+				youTubeTextAccount.Text = "";
 			}
 		}
 
