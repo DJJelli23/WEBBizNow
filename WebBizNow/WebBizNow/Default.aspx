@@ -3,6 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="row">
+        <section class="mbr-section mbr-section-hero mbr-section-full mbr-parallax-background mbr-after-navbar" ></section>
         <asp:MultiView ID="webBizNowMultiView" runat="server">
             <%-- Social Media View --%>
             <asp:View ID="viewSocialM" runat="server">
@@ -39,7 +40,7 @@
                         </asp:TableCell>
                     </asp:TableRow>
                     <%--This is where the social media checkboxes will be with their textbox controller to gather the information if the user signing up for the company has one.--%>
-                    <%-------------------------------------------------------------------------------------------------------------------------------------%>
+<%-------------------------------------------------------------------------------------------------------------------------------------%>
                     <asp:TableRow CssClass="col-lg-6 col-lg-offset-3">
                         <asp:TableCell CssClass="col-lg-8 col-lg-offset-2  col-md-6 col-sm-6 col-xs-6">
                             <asp:CheckBox ID="facebookCheck" runat="server" Text="Facebook" OnCheckedChanged="CheckButtonClicked" AutoPostBack="True" />
